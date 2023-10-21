@@ -1,0 +1,143 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #a4abd4;
+}
+
+#contenedor{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns:  repeat(12, 1fr);
+    grid-template-rows: 50px repeat(11 , 1fr);
+}
+
+#caja-central{
+   grid-column: 3 /11;
+    grid-row: 3 / 11;
+    background-color: white;
+    box-shadow: 0px 5px 15px gray;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    grid-template-rows:  1fr 1fr 1fr;
+    height: auto;
+}
+
+#derecha{
+grid-column: 2 /3 ;
+grid-row: 1 / 4;
+background-color: #647085;
+display: block;
+
+}
+#izquierda{
+   grid-column: 1 / 2;
+   grid-row: 1 /4 ;
+   margin: 5%;
+   letter-spacing: 2px;
+   color: gray;
+   
+}
+.cajas{
+  
+    display: block;
+    margin-top: 5%;
+    width: 100%;
+    height: 25%;
+}
+input{
+    border: 0px;
+    height: 40px;
+    padding-left: 10px;
+    letter-spacing: 5px;
+
+    font-size: 20px;
+    color: #647085;
+}
+input:focus{
+    outline:none ;
+}
+
+
+.caja-inline{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.cajita{
+   
+    
+   
+}
+.input-group{
+    display: block;
+    width: 100%;
+}
+#mastercard{
+margin-top: 10px;
+}
+
+.box-border{
+    border-bottom: 1px solid #ccc;
+
+}
+.ml{
+    margin-left: 20px;
+}
+.mr{
+    margin-right: 20px;
+}
+
+.mt{
+margin-top: 4%;
+}
+button{
+    background-color:#39D996;
+  
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #2edb93;
+    box-shadow: 0px 0px 5px #ccc
+}
+
+.ancho2{
+    width: 20%;
+}
+.ancho6{
+    width: 60%;
+}
+#laptop{
+     z-index: 1;
+    margin-left: -50px;
+}
+
+#precio{
+    color: white;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 3px;
+    font-size: 40px;
+
+
+}
+#ceros{
+    font-size: 20px;
+}
+#total{
+    text-align: center;
+    letter-spacing: 3px;
+    color: #a4abd4;
+    
+}
+
+

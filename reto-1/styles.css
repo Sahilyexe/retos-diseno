@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: #B0D8DA;
+    height: 654px;
+   
+}
+ 
+#content{
+    height: 654PX;
+    background-color: white;
+    grid-column: 5 / 13;
+    border-radius: 25px 0px 0px 25px;
+} 
+#left{
+    grid-column: 1 / 5;
+  
+    margin-left: 20px;
+   
+}
+#logo{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color:  #B0D8DA;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+#C{
+ line-height: 50px;
+  
+}
+#titulo1{
+    color: white;
+    margin-top: 30px;
+}
+#imagen{
+    position: absolute;
+    z-index: 1;
+}
+#formulario{
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+   
+}
+#formulario input{
+    width: 100%;
+    margin-top: 40px;
+    height: 30px;
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+}
+#formulario input[text]:active{
+  border: 0px;
+}
+
+button{
+    width: 100%;
+    background-color: #90d6da;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0px;
+    border: 1px solid #5dced4;
+    margin-top: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: #5ed0d6;
+    cursor: pointer;
+ 
+}
+.enlace{
+    text-decoration: none;
+}
+.texto{
+    color: #7b7987;
+}
+#or{
+    display: block;
+    width: 100%;
+  text-align: center;
+}
+#terceros{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: gray;
+}
+.logins{
+   
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 7px;
+}
+#google{
+    margin-right: 5px;
+}
+input:focus{
+    outline:none ;
+}

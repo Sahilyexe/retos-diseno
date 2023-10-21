@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url('img/bombillos.webp');
+    background-size: 100%;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 1fr;
+}
+header{
+   
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: auto;
+}
+#content{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    height: auto;
+
+}
+#cuadro{
+    width: 650px;
+    margin: 0px auto;
+    margin-top: 60px;
+    text-align: center;
+    
+}
+.icono-centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h1{
+    font-size: 150px;
+    text-align: center;
+}
+#page-not-found{
+    font-size: 30px; 
+}
+.text-white{
+    color: white;
+}
+.horizontal{
+    display: flex;
+    flex-direction: row;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.negrita{
+    font-weight: bold;
+}
+
+button{
+    background-color: #FF7E68;
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+
+}

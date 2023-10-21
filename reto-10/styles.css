@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #A5DAFA;
+}
+
+#contenedor {
+    width: 500px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor .social{
+    width: 80px;
+    height: 40px;
+  
+    border-radius: 30px;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+
+
+.social-logo img {
+    margin-top: -13px;
+    margin-left: -12px;
+    clip-path: circle(21px);
+}
+.one{
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    /* content: url('img/1.PNG'); */
+    transition: all 300ms;
+    clip-path: circle(21px);
+    background-color: green;
+    transition: all 1s ease-in-out;
+}
+
+.one:checked{
+    appearance: auto;
+    accent-color: blue;
+    /* content: url('img/2.PNG'); */
+    transition: all 1s ease-in-out;
+    
+  }
+  /*--------------------chechbox two-----------------------------*/
+  .two{
+    appearance: none;
+    width: 80px;
+    height: 35px;
+    border-radius: 30px;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    transition: all 800ms ease-in-out;
+  }
+  .two::after{
+    content: "No";
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
+  .two:checked{
+    background-color: green;
+ 
+  }
+  .two:checked::after{
+    content: "Yes"; 
+    float: right;
+  }
+  /*--------------------chechbox tre-----------------------------*/
+.tree{
+    font-family: "Material Symbols Outlined";
+    appearance: none;
+    width: 80px;
+    height: 35px;
+    border-radius: 30px; 
+    background-color: orange;
+    padding-top: 6px;
+    font-size: 20px;
+    transition: all 800ms ease-in-out;
+}
+
+.tree:active{
+    display: flex;
+    justify-content: center; 
+    transform: rotateY(-30deg);
+}
+.tree:checked{
+    
+    transform: rotateY(180deg);
+}
+.tree::after{
+    content: "\e811";
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+
+}
+.tree:checked::after{
+    content: "\e7f2"; 
+  
+}
+
+.tree:active::after{
+    content: "\e812";
+    animation: showIcon 100ms linear;
+}
+@keyframes showIcon{
+    from{
+        opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
+}
+
+/*-----------checkboc four---------------*/
+.four{
+  
+    appearance: none;
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    border-radius: 30px; 
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 10px;
+   float: left;
+}
+.four::after{
+    content: "shared";
+    height: 35px;
+    float: left;
+    color: #0080FF ;
+    font-size: 10px;
+}
+.four:checked{
+    background-color:#0080FF ;
+}
+.four:checked::after{
+    content: "5.6k";
+    height: 35px;
+    float: right;
+    text-align: left;
+    align-items: center;
+    color: white;
+
+}
+/**/
+.six{
+    font-family: "Material Symbols Outlined";
+     font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 24;
+    appearance: none;
+    font-size: 30px;
+}
+.six::after{
+    content: "\e87d";
+    color: gray;
+}
+.six:checked::after{
+   color: red;
+}
+
+

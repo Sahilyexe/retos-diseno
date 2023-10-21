@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   background-color: #fae7e8;
+}
+#marco{
+width: 500px;
+height: 500px;
+margin: 0px auto;
+background-color: #DB3E3E;
+margin-top: 120px;
+border-radius: 80px;
+box-shadow: 0px 0px 2px gray;
+overflow: hidden;
+
+}
+
+#sol{
+width: 90px;
+height: 90px;
+display: block;
+background-color: #ECC85E;
+border-radius: 50px;
+margin-top: 100px;
+margin-left: 100px;
+}
+
+
+#marco #loma1{
+    width: 300px;
+    height: 300px;
+    display: block;
+    background-color: #31303A;
+    rotate: 45deg ;
+    margin-top: 100px;
+    margin-left: -90px;
+    box-shadow: -5px 10px 10px rgba(10, 10, 10, 0.322);
+}
+#marco #loma2{
+    width: 300px;
+    height: 800px;
+    display: block;
+    rotate: 45deg ;
+    background-color: #31303A;
+    margin-top: -600px;
+    margin-left: 100px;
+    box-shadow: -5px 10px 10px rgba(10, 10, 10, 0.322);
+}
+#marco #loma3{
+    width: 300px;
+    height: 600px;
+    display: block;
+    rotate: 45deg ;
+    background-color: #31303A;
+    box-shadow: -5px 10px 10px rgba(10, 10, 10, 0.322);
+    margin-top: -400px;
+    margin-left: 10px;
+    
+}

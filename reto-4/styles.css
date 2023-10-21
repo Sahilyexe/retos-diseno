@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #f3f3f4;
+}
+#contenedor{
+   
+}
+#marco-calculadora{
+    width: 300px;
+    height: 500px;
+    margin: 0px auto;
+    margin-top: 60px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 15px #ddd;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    padding: 5px;
+}
+#display{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+}
+#calculo{
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: end;
+    
+    color: #71717171;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+#calculo > div{
+margin-left: 7px;
+}
+#result{
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: flex-end;
+    font-size: 30px;
+}
+
+
+#bolitas{
+   width: 100%;
+   height: 20%;
+}
+#marco-calculadora .bolita{
+    width: 10px;
+    height: 10px;
+    background-color: #71717171;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 3px;
+}
+#teclas{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#teclas #borrar{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+  
+}
+#teclas .tecla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#teclas .calcular{
+    width: 55%;
+    height: 60%;
+   
+    border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 4px rgb(124, 124, 124);
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#teclas #division div{
+    background-color: #D160E8;
+   
+}
+#teclas #division div:hover{
+    background-color:#9a3aad;
+}
+#teclas #por div{
+   background-color: #fa548b;
+ 
+}
+#teclas #por div:hover{
+    background-color: #f81963;
+  
+ }
+#teclas #menos div{
+    background-color: #7bb4f7;
+  
+}
+#teclas #menos div:hover{
+    background-color: #3891f7;
+  
+}
+#teclas #mas div{
+    background-color: rgb(247, 185, 71);
+  
+}
+#teclas #mas div:hover{
+    background-color: orange;
+  
+}
+#teclas #igual div{
+   
+    background-color: #4ccf94;
+}
+#teclas #igual div:hover{
+   
+    background-color: #06ce74;
+}
+
+#teclas .numero:hover{
+    background-color: #ddd;
+    }
+    #teclas .numero:active{
+        background-color: gray;
+        }
+
+
